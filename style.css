@@ -1,0 +1,29 @@
+body{
+  background-color: #b09e99;
+  text-align: center;
+}
+
+.container{
+  position: absolute;
+  top: 30%;
+  left:10%;
+  width: 80%;
+  height: 30%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button{
+  margin-top: 5%;
+  background-color: green;
+  border: 0px;
+  color: white;
+  padding: 15px;
+  box-shadow: 2px 2px black;
+}
+ #quote{
+   margin-top: 25px;
+ }
+ #author{
+   margin-top: 1em;
+   text-align: right;
+ }

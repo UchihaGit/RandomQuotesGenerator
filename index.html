@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <button type="button" id="btnclass" onclick="myFunction()" name="button"> Generate Quote</button>
+    <div id="quote">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div id="author">
+      -Author
+    </div>
+  </div>
+  <script>
+    const quotes = [{quote:"abcd",author:"a"}, {
+      quote:
+        "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
+      author: " Life"
+    },
+    {
+      quote:
+        "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
+      author: "John Kenneth Galbraith"
+    },
+    {
+      quote:
+        "God save me from my friends. I can protect myself from my enemies.",
+      author: "Claude Louis Hector de Villars "
+    },
+    {
+      quote: "The price of anything is the amount of life you exchange for it.",
+      author: "David Thoreau"
+    },
+    {
+      quote:
+        "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
+      author: "Charles Lindbergh"
+    },
+    {
+      quote:
+        "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
+      author: " Tyne Daly"
+    }];
+
+
+var i = 0;
+function myFunction() {
+
+  var a = quotes.length-1;
+  console.log(a);
+
+
+        i = i < quotes.length-1 ? ++i : 0;
+          console.log(i);
+      document.getElementById("quote").textContent = quotes[i].quote;
+      document.getElementById("author").textContent = quotes[i].author;
+        console.log(quotes[i].quote);
+}
+
+    //immediate invoked function expression
+  /*  (function() {
+      const quotes = [
+        {
+          quote:
+            "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
+          author: " Life"
+        },
+        {
+          quote:
+            "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
+          author: "John Kenneth Galbraith"
+        },
+        {
+          quote:
+            "God save me from my friends. I can protect myself from my enemies.",
+          author: "Claude Louis Hector de Villars "
+        },
+        {
+          quote: "The price of anything is the amount of life you exchange for it.",
+          author: "David Thoreau"
+        },
+        {
+          quote:
+            "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
+          author: "Charles Lindbergh"
+        },
+        {
+          quote:
+            "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
+          author: " Tyne Daly"
+        }
+      ];
+
+      const btn = document.getElementById("btnclass");
+
+      btn.addEventListener("click", function() {
+        let random = Math.floor(Math.random() * quotes.length);
+        console.log(random);
+
+        document.getElementById("quote").textContent = quotes[random].quote;
+        document.querySelector(".author").textContent = quotes[random].author;
+      });
+    })(); */
+
+  </script>
+</body>
+
+</html>
